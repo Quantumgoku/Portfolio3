@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+h1{
+    color: red;
+    font-size: calc(2.5vw + 10px);
+    display: block;
+    margin-block-start: 0.67rem;
+    margin-block-end: 0.67em;
+    font-weight: bold;
+    padding-bottom: 0px;
+    text-align: center;
+    margin-left: 10rem;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+.portfolio-name{
+    font-size: 2.5rem;
+    margin: .5rem;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+nav ul{
+    display: flex;
+    margin-right: 20px;
+}
+nav li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+.toggle-button{
+    position: absolute;
+    top: .7rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+div{
+    display: block;
+}
+.hom2{
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    min-height: 90vh;
+    background-image: url(https://wpamelia.com/wp-content/uploads/2019/02/dark-hd-wallpaper-incense-52732.jpg);
+    background-size: cover;
+    height: calc(100vh-80px);
+    background-position:50% 20%;
+}
+.Text{
+    text-align: center;
+    font-weight: 300;
+    font-size: calc(5vw + 18px);
+    font-style: italic;
+    padding: 80px;
+    margin: 60px;
+}
+.prabhat{
+    color: #dd3636;
+    text-decoration: underline;
+}
+.about2{
+    background-image: url(https://wallpaperaccess.com/full/1428482.jpg);
+    background-size: cover;
+    display: flex;
+    float: right;
+    flex-wrap: nowrap;
+    background-position: 50% 20%;
+    min-height: 90vh;
+}
+figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0.5;
+}
+figure .image-container {
+    width: 18vw;
+    height: 18vw;
+    max-height: 36vw;
+    border-radius: 50%;
+    background-image: url(IEEE3.jpeg);
+    background-size: cover;
+}
+.intro{
+    color: white;
+    font-family: 'Island Moments',cursive;
+    font-weight: 300;
+    font-size: calc(2.5vw + 10px);
+    margin-top: 10rem;
+    padding: 17px;
+    text-align: left;
+    margin-left: 5rem;
+}
+nav li.home,li:hover{
+    background: #1b9bff;
+    transition: .5s;
+
+}
+.skills2{
+    color: #ce4242b2;
+    font-size: calc(2.5vw + 10px);
+}
+.skills2 ul{
+    display: flex;
+    flex: 2.7;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.projects2{
+    background-color: aquamarine;
+}
+.about-projects{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(2.5vw + 18px);
+    color: black;
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    padding: 80px;
+    margin: 60px;
+}
+.contacts2{
+    background-color: orange;
+}
+.contacts2 .logo-container ul{
+    width: 100%;
+    display: flex;
+    flex: 2.7;
+    justify-content: space-around;
+    align-items: center;
+}
+@media (max-width: 952px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        padding: 0px;
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    .hom2{
+        display: flex;
+        flex-direction: column;
+    }
+}
