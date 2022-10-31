@@ -125,10 +125,9 @@ figure .image-container {
     text-align: left;
     margin-left: 5rem;
 }
-nav li.home,li:hover{
+.navbar-links li.home,.about:hover,.skills:hover,.projects:hover,.contacts:hover{
     background: #1b9bff;
     transition: .5s;
-
 }
 .skills2{
     color: #ce4242b2;
@@ -159,10 +158,15 @@ nav li.home,li:hover{
 }
 .contacts2 .logo-container ul{
     width: 100%;
+    padding: 10px;
     display: flex;
     flex: 2.7;
     justify-content: space-around;
     align-items: center;
+}
+.contacts2 .logo-container ul li a{
+    padding: 10px;
+    margin: 10px;
 }
 @media (max-width: 952px) {
     .navbar {
@@ -195,7 +199,7 @@ nav li.home,li:hover{
         padding: .5rem 1rem;
     }
 
-    .navbar-links.active {
+    .navbar-links .active{
         display: flex;
     }
     .hom2{
